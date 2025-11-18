@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 6</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
+
 <div class="container">
+    <h2>Section 6</h2>
+    <p><em>These statements explore your views on personal autonomy, consent, and how much control individuals should have over their own lives.</em></p>
+    <hr>
 
-<h2>Section 6</h2>
+    <div class="question-block">
+        <label>1. Individuals should control every aspect of their own lives.</label>
+        <input type="range" min="1" max="7" value="4" id="q51" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">51. It is safer to trust institutions to handle big societal issues.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q51">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>2. Society should be able to override personal freedom for safety.</label>
+        <input type="range" min="1" max="7" value="4" id="q52" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">52. Most societal problems are too complex for individuals to evaluate independently.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q52">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>3. Consent is a foundational requirement for all interactions.</label>
+        <input type="range" min="1" max="7" value="4" id="q53" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">53. It is better to follow the majority than question established norms.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q53">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>4. People should sometimes be forced to act “for their own good.”</label>
+        <input type="range" min="1" max="7" value="4" id="q54" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">54. Systemic patterns matter less than individual choices when analyzing society.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q54">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>5. Autonomy is more important than collective safety.</label>
+        <input type="range" min="1" max="7" value="4" id="q55" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">55. Questioning authority too deeply creates instability.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q55">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>6. It is acceptable to restrict freedom to prevent hypothetical risks.</label>
+        <input type="range" min="1" max="7" value="4" id="q56" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">56. Information beyond one’s immediate experience is not very relevant to daily life.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q56">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>7. Fully informed consent should be required in all agreements.</label>
+        <input type="range" min="1" max="7" value="4" id="q57" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">57. It is better not to question the intentions of those in power.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q57">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>8. Authority should sometimes make decisions on behalf of individuals.</label>
+        <input type="range" min="1" max="7" value="4" id="q58" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">58. People who analyze social systems too deeply are often paranoid.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q58">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>9. People should be free to take risks with their own lives.</label>
+        <input type="range" min="1" max="7" value="4" id="q59" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">59. Stability requires trusting established institutions.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q59">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>10. Safety justifies restricting personal freedom.</label>
+        <input type="range" min="1" max="7" value="4" id="q60" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">60. It is healthier to accept the world as it is rather than examine its underlying structure.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q60">
-<span class="slider-value">Neutral</span>
-
-<div class="button-container">
-<button type="button" class="next-button" onclick="saveSection(6)">Submit</button>
+    <button class="next-button" onclick="saveSection(6)">Next</button>
 </div>
 
-</div>
 </body>
 </html>
