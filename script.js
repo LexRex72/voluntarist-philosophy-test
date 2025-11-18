@@ -172,3 +172,23 @@ function generateReport(x, y) {
     // Combine
     document.getElementById("resultText").innerHTML = text;
 }
+document.querySelectorAll('.slider').forEach(slider => {
+    const valueLabel = slider.nextElementSibling;
+
+    const labels = {
+        1: "Strongly Disagree",
+        2: "Disagree",
+        3: "Slightly Disagree",
+        4: "Neutral",
+        5: "Slightly Agree",
+        6: "Agree",
+        7: "Strongly Agree"
+    };
+
+    valueLabel.textContent = labels[slider.value];
+
+    slider.addEventListener('input', () => {
+        valueLabel.textContent = labels[slider.value];
+    });
+});
+
