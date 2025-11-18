@@ -63,3 +63,26 @@ canvas {
     background: white;
     border: 1px solid #222;
 }
+/* FIX SECTION 1 LAYOUT — MAKE IT MATCH OTHER SECTIONS */
+label {
+    display: block;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.slider {
+    width: 100%;
+    margin: 6px 0 4px 0;
+}
+
+.slider-value {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.next-button {
+    display: block;
+    margin: 35px auto 10px auto;
+}
+
