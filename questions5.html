@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 5</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
+
 <div class="container">
+    <h2>Section 5</h2>
+    <p><em>These statements explore your views on accountability, justice, and how conflicts should be resolved when harm occurs.</em></p>
+    <hr>
 
-<h2>Section 5</h2>
+    <div class="question-block">
+        <label>1. Justice requires strict punishment for wrongdoing.</label>
+        <input type="range" min="1" max="7" value="4" id="q41" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">41. Society needs unifying symbols like flags for stability.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q41">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>2. Accountability should focus on restoring harm rather than punishing offenders.</label>
+        <input type="range" min="1" max="7" value="4" id="q42" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">42. National identity is more important than individual autonomy.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q42">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>3. Rule violations should always be penalized.</label>
+        <input type="range" min="1" max="7" value="4" id="q43" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">43. Political leaders deserve admiration because they represent the nation.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q43">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>4. Harm-based outcomes should define justice more than rule-breaking.</label>
+        <input type="range" min="1" max="7" value="4" id="q44" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">44. Collective ceremonies help maintain social order.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q44">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>5. Offenders should face consequences even when no one was harmed.</label>
+        <input type="range" min="1" max="7" value="4" id="q45" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">45. Citizens should show loyalty to the state.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q45">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>6. Restitution is more important than punishment.</label>
+        <input type="range" min="1" max="7" value="4" id="q46" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">46. Criticizing national symbols should be discouraged.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q46">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>7. Breaking rules deserves penalties even when no harm occurs.</label>
+        <input type="range" min="1" max="7" value="4" id="q47" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">47. Statues of political leaders help guide national morality.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q47">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>8. Justice should prioritize repairing relationships and restoring balance.</label>
+        <input type="range" min="1" max="7" value="4" id="q48" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">48. A strong collective identity is essential for stability.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q48">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>9. A rulebroken is inherently wrong, regardless of harm.</label>
+        <input type="range" min="1" max="7" value="4" id="q49" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">49. Political unity is more important than personal disagreement.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q49">
-<span class="slider-value">Neutral</span>
+    <div class="question-block">
+        <label>10. Justice should focus on outcomes, not rule enforcement.</label>
+        <input type="range" min="1" max="7" value="4" id="q50" class="slider">
+        <span class="slider-value">Neutral</span>
+    </div>
 
-<label class="question-label">50. Citizens should admire political office-holders for unity.</label>
-<input type="range" min="1" max="7" value="4" class="slider" id="q50">
-<span class="slider-value">Neutral</span>
-
-<div class="button-container">
-<button type="button" class="next-button" onclick="saveSection(5)">Next</button>
+    <button class="next-button" onclick="saveSection(5)">Next</button>
 </div>
 
-</div>
 </body>
 </html>
