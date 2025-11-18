@@ -3,82 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voluntarist Philosophy Test – Results</title>
+    <title>Results</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
-<body onload="calculateResults()">
+<body>
 
 <div class="container">
+    <h2>Your Results</h2>
 
-    <h1>Your Results</h1>
-
-    <p class="quadrant-labels"><strong>Your position on the Voluntarist Philosophy Compass:</strong></p>
-
-    <!-- Compass Canvas -->
     <canvas id="compassCanvas" width="400" height="400"></canvas>
 
-    <!-- Axis labels -->
-    <div style="text-align:center; margin-top:15px;">
-        <div><strong>AUTHORITARIAN ↑</strong></div>
-        <div style="display:flex; justify-content:space-between; margin:10px 0;">
-            <strong>RULE-BASED MORALITY ←</strong>
-            <strong>→ HARM-BASED MORALITY</strong>
-        </div>
-        <div><strong>↓ VOLUNTARIST</strong></div>
-    </div>
+    <div id="resultText" style="margin-top: 20px; font-size: 18px;"></div>
 
-    <h2>Interpretation</h2>
-    <div id="resultText" class="result-text"></div>
-
-    <h2>What Your Results Mean</h2>
-    <div id="detailedReport" class="result-text"></div>
-
+    <script>
+        calculateResults();
+    </script>
 </div>
 
-<script>
-/* ————————————————————————————————
-   GENERATE EXTENDED BREAKDOWN TEXT
-   ———————————————————————————————— */
-function generateReport(x, y) {
-    let summary = "";
-    let explanation = "";
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-    /* Horizontal (Morality Axis) */
-    if (x > 10) {
-        summary += "<strong>You strongly align with Harm-Based Morality.</strong><br>";
-        explanation += "You evaluate actions primarily by their consequences and the presence or absence of real victims. Rules have no inherent moral weight for you unless they protect against harm. ";
-    } else if (x > 0) {
-        summary += "<strong>You lean toward Harm-Based Morality.</strong><br>";
-        explanation += "You prioritize harm, consent, and outcomes over rule-following. You believe morality comes from real-world impact rather than authority or legislation. ";
-    } else if (x < -10) {
-        summary += "<strong>You strongly align with Rule-Based Morality.</strong><br>";
-        explanation += "You place high importance on rules, tradition, or legally defined morality. Even actions without victims may still seem wrong to you due to symbolic, cultural, or legal expectations. ";
-    } else {
-        summary += "<strong>You lean toward Rule-Based Morality.</strong><br>";
-        explanation += "You give some moral weight to rules and conventions, even when no direct harm is caused. You value order, consistency, and shared norms. ";
-    }
+<div class="container">
+    <h2>Your Results</h2>
 
-    /* Vertical (Authority Axis) */
-    if (y > 10) {
-        summary += "You strongly lean Authoritarian.";
-        explanation += " You believe authority structures, hierarchy, and enforced order are essential for society. Stability is more important than unrestricted freedom.";
-    } else if (y > 0) {
-        summary += "You lean Authoritarian.";
-        explanation += " You believe authority and state guidance are necessary to some degree. You prefer structured order over decentralized autonomy.";
-    } else if (y < -10) {
-        summary += "You strongly lean Voluntarist.";
-        explanation += " You believe moral legitimacy comes from consent, not authority. You reject coercive power structures and view voluntary interaction as the basis of a stable society.";
-    } else {
-        summary += "You lean Voluntarist.";
-        explanation += " You prefer personal autonomy to external authority. You believe society functions best with minimal coercion and maximum voluntary cooperation.";
-    }
+    <canvas id="compassCanvas" width="400" height="400"></canvas>
 
-    document.getElementById("resultText").innerHTML = summary;
-    document.getElementById("detailedReport").innerHTML = explanation;
-}
-</script>
+    <div id="resultText" style="margin-top: 20px; font-size: 18px;"></div>
+
+    <script>
+        calculateResults();
+    </script>
+</div>
 
 </body>
 </html>
